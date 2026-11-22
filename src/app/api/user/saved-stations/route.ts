@@ -16,7 +16,7 @@ export async function GET(request: NextRequest) {
       orderBy: { createdAt: 'desc' },
     });
 
-    const data: SavedStationRecord[] = savedStations.map((r) => ({
+    const data: SavedStationRecord[] = savedStations.map((r: SavedStationRecord) => ({
       userId: r.userId,
       stationId: r.stationId,
       createdAt: r.createdAt,
