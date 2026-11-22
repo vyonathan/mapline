@@ -324,13 +324,13 @@ export function computeTrainPosition(
 ): { pos: LatLng; segment: { aIdx: number; bIdx: number } } | null {
   const stops = trip.stops;
   if (!stops || stops.length < 2) return null;
-  const firstTime = stops[0].time;
-  const lastTime = stops[stops.length - 1].time;
+  const firstTime = stops[0]!.time;
+  const lastTime = stops[stops.length - 1]!.time;
   if (simMinutes < firstTime || simMinutes > lastTime) return null;
 
   let segIdx = 0;
   for (let i = 0; i < stops.length - 1; i++) {
-    if (simMinutes >= stops[i].time && simMinutes <= stops[i + 1].time) {
+    if (simMinutes >= stops[i]!.time && simMinutes <= stops[i + 1]!.time) {
       segIdx = i;
       break;
     }

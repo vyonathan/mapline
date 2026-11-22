@@ -1,31 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { STATION_INDEX, LINE_INDEX, STATIONS, LINES } from '@/lib/railway-data';
-import {
-  AVAILABLE_SCHEDULES,
-  getDataset,
-  getDatasetMetadata,
-} from '@/features/timetables/timetable-dataset';
-
-// GET /api/timetables/versions
-export async function GET_VERSIONS(request: NextRequest) {
-  try {
-    return NextResponse.json({
-      data: AVAILABLE_SCHEDULES.map((s) => ({
-        version: s.version,
-        label: s.label,
-        sourceType: s.sourceType,
-        attribution: s.attribution,
-        isSynthetic: s.isSynthetic,
-      })),
-    });
-  } catch (error) {
-    console.error('Failed to get timetable versions:', error);
-    return NextResponse.json({ error: 'Failed to retrieve timetable versions' }, { status: 500 });
-  }
-}
+import { getDataset, getDatasetMetadata } from '@/features/timetables/timetable-dataset';
 
 // GET /api/timetables/[version]
-export async function GET_DATASET(request: NextRequest) {
+export async function GET(request: NextRequest) {
   try {
     const version = request.nextUrl.pathname.split('/').pop();
     if (!version) {
@@ -40,7 +17,6 @@ export async function GET_DATASET(request: NextRequest) {
     const dataset = await getDataset(version as '2025' | '2026');
     const metadata = getDatasetMetadata(dataset);
 
-    // Only send metadata + count, not the full trips array (client will paginate)
     return NextResponse.json({
       data: {
         version: metadata.version,

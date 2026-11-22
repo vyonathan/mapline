@@ -2,8 +2,19 @@ import type { TimetableTrip, LatLng } from '@/types/railway';
 import { STATIONS, LINES, STATION_INDEX, LINE_INDEX, tripsByLine, findTrip } from '@/lib/railway-data';
 import { buildRailwayNetwork } from '@/features/railway/railway-graph';
 
-/** Cached railway network (built once per process). */
-let networkPromise: Promise<ReturnType<typeof buildRailwayNetwork>> | null = null;
+/** Simulation clock state (WIB minutes, wall timestamp, speed multiplier). */
+interface SimClock {
+  minutes: number;
+  wallMs: number;
+  speed: number;
+}
+
+/** Simulation clock singleton (default: 10:00 WIB, realtime speed). */
+let clock: SimClock = {
+  minutes: 10 * 60,
+  wallMs: Date.now(),
+  speed: 1,
+};
 
 export function getSimClock(): SimClock {
   return { ...clock };
@@ -54,28 +65,13 @@ export interface EngineCallbacks {
   onMapUpdate?: () => void;
 }
 
-// Cached railway network (built once per process).
-let networkPromise: Promise<ReturnType<typeof buildRailwayNetwork>> | null = null;
-
-function getNetwork(): ReturnType<typeof buildRailwayNetwork> {
-  if (!networkPromise) {
-    networkPromise = Promise.resolve(buildRailwayNetwork());
-  }
-  return networkPromise;
-}
 
 function getStationIndex() {
-  if (!stationIndexPromise) {
-    stationIndexPromise = import('@/lib/railway-data').then((m) => m.buildStationIndex);
-  }
-  return stationIndexPromise;
+  return STATION_INDEX;
 }
 
 function getLineIndex() {
-  if (!lineIndexPromise) {
-    lineIndexPromise = import('@/lib/railway-data').then((m) => m.buildLineIndex);
-  }
-  return lineIndexPromise;
+  return LINE_INDEX;
 }
 
 /**
@@ -94,20 +90,21 @@ export async function computeActiveTrainPositions(
   for (const trip of trips) {
     const stops = trip.stops;
     if (!stops || stops.length < 2) continue;
-    const firstTime = stops[0].time;
-    const lastTime = stops[stops.length - 1].time;
+    const firstTime = stops[0]!.time;
+    const lastTime = stops[stops.length - 1]!.time;
     if (simMinutes < firstTime || simMinutes > lastTime) continue;
 
     // Find which segment we're on.
     let segIdx = 0;
     for (let i = 0; i < stops.length - 1; i++) {
-      if (simMinutes >= stops[i].time && simMinutes <= stops[i + 1].time) {
+      if (simMinutes >= stops[i]!.time && simMinutes <= stops[i + 1]!.time) {
         segIdx = i;
         break;
       }
     }
     const a = stops[segIdx];
     const b = stops[segIdx + 1];
+    if (!a || !b) continue;
     const span = Math.max(0.1, b.time - a.time);
     const frac = Math.max(0, Math.min(1, (simMinutes - a.time) / span));
 
@@ -192,28 +189,30 @@ export function syncToLiveClock() {
 
 function interpolateAlongPath(points: LatLng[], fraction: number): LatLng {
   if (!points || points.length === 0) return [0, 0];
-  if (points.length === 1 || fraction <= 0) return points[0];
-  if (fraction >= 1) return points[points.length - 1];
+  if (points.length === 1 || fraction <= 0) return points[0]!;
+  if (fraction >= 1) return points[points.length - 1]!;
 
   let totalLen = 0;
   const segLens: number[] = [];
   for (let i = 0; i < points.length - 1; i++) {
-    const d = Math.hypot(points[i + 1][1] - points[i][1], points[i + 1][0] - points[i][0]);
+    const p0 = points[i]!;
+    const p1 = points[i + 1]!;
+    const d = Math.hypot(p1[1] - p0[1], p1[0] - p0[0]);
     segLens.push(d);
     totalLen += d;
   }
-  if (totalLen === 0) return points[0];
+  if (totalLen === 0) return points[0]!;
 
   let target = fraction * totalLen;
   for (let i = 0; i < segLens.length; i++) {
-    if (target <= segLens[i] || i === segLens.length - 1) {
-      const t = segLens[i] > 0 ? target / segLens[i] : 0;
+    if (target <= segLens[i]! || i === segLens.length - 1) {
+      const t = segLens[i]! > 0 ? target / segLens[i]! : 0;
       return [
-        points[i][0] + (points[i + 1][0] - points[i][0]) * t,
-        points[i][1] + (points[i + 1][1] - points[i][1]) * t,
+        points[i]![0] + (points[i + 1]![0] - points[i]![0]) * t,
+        points[i]![1] + (points[i + 1]![1] - points[i]![1]) * t,
       ];
     }
-    target -= segLens[i];
+    target -= segLens[i]!;
   }
-  return points[points.length - 1];
+  return points[points.length - 1]!;
 }

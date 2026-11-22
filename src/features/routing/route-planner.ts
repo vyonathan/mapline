@@ -236,33 +236,10 @@ export async function findBestRouteWithPath(
   const route = await findBestRoute(originId, destId, options);
   if (!route) return null;
 
-  // Insert intermediate stations along each step for smoother rendering.
-  const fullPath: [number, number][] = [];
-  for (let i = 0; i < route.steps.length; i++) {
-    const step = route.steps[i];
-    if (!step) continue;
-    const a = step.from;
-    const b = step.to;
-    // Get coordinates
-    const coordA = route.path.find((p) => p[1] === a);
-    const coordB = route.path.find((p) => p[1] === b);
-    if (!coordA || !coordB) continue;
-    // Just use the precomputed path (already smooth enough).
-    // Split into the route's own path segments.
-    const startIdx = route.path.findIndex((p) => p[1] === a);
-    const endIdx = route.path.findIndex((p) => p[1] === b);
-    if (startIdx >= 0 && endIdx > startIdx) {
-      for (let j = startIdx; j <= endIdx; j++) {
-        fullPath.push(route.path[j]);
-      }
-    } else {
-      fullPath.push(coordA, coordB);
-    }
-  }
-
+  // Keep the precomputed path as-is.
   return {
     ...route,
-    path: fullPath,
+    path: route.path,
   };
 }
 

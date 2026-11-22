@@ -124,13 +124,4 @@ export async function POST(request: NextRequest) {
   }
 }
 
-// GET /api/stations/ids
-export async function GET_IDS(request: NextRequest) {
-  try {
-    // Return an ordered array of station IDs for autocomplete/quick-navigation
-    return NextResponse.json({ data: STATIONS.map((s) => s.id) });
-  } catch (error) {
-    console.error('Failed to get station IDs:', error);
-    return NextResponse.json({ error: 'Failed to retrieve station IDs' }, { status: 500 });
-  }
-}
+

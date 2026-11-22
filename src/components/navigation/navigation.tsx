@@ -51,7 +51,7 @@ export default function Navigation() {
 
   const isActive = (id: string) => {
     if (id === 'map') return pathname === '/' || pathname === '/map';
-    return pathname.startsWith(`/${id}`);
+    return pathname?.startsWith(`/${id}`) ?? false;
   };
 
   return (

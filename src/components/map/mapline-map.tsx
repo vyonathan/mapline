@@ -6,7 +6,7 @@ import L from 'leaflet';
 import { STATIONS, LINES, STATION_INDEX, LINE_INDEX, getLineById, getStationById } from '@/lib/railway-data';
 import { buildRailwayNetwork, type RailwayNetwork, computeLineCorridors, type CorridorConfig } from '@/features/railway/railway-graph';
 import { formatTimeWIB } from '@/lib/railway-data';
-import type { RailwayStation, RailwayLine } from '@/types/railway';
+import type { RailwayStation, RailwayLine, LatLng } from '@/types/railway';
 
 // Leaflet CSS (required)
 import 'leaflet/dist/leaflet.css';
@@ -130,15 +130,16 @@ export default function MaplineMap({
     for (const line of LINES) {
       if (activeLineIds.length > 0 && !activeLineIds.includes(line.id)) continue;
       const corridors = computeLineCorridors(line, network);
-      for (let ci = 0; ci < corridors.length; ci++) {
-        const corridor = corridors[ci];
+      const corridorList = corridors as LatLng[][];
+      for (let ci = 0; ci < corridorList.length; ci++) {
+        const corridor = corridorList[ci];
         if (!corridor || corridor.length < 2) continue;
         // Deduplicate consecutive points (leaflet doesn't like duplicated latlngs)
         const deduped: [number, number][] = [];
         for (let pi = 0; pi < corridor.length; pi++) {
           const p = corridor[pi];
           if (!p) continue;
-          if (deduped.length === 0 || deduped[deduped.length - 1][0] !== p[0] || deduped[deduped.length - 1][1] !== p[1]) {
+          if (deduped.length === 0 || deduped[deduped.length - 1]![0] !== p[0] || deduped[deduped.length - 1]![1] !== p[1]) {
             deduped.push(p);
           }
         }
@@ -162,14 +163,15 @@ export default function MaplineMap({
     for (const line of LINES) {
       if (activeLineIds.length > 0 && !activeLineIds.includes(line.id)) continue;
       const corridors = computeLineCorridors(line, network);
-      for (let ci = 0; ci < corridors.length; ci++) {
-        const corridor = corridors[ci];
+      const corridorList = corridors as LatLng[][];
+      for (let ci = 0; ci < corridorList.length; ci++) {
+        const corridor = corridorList[ci];
         if (!corridor || corridor.length < 2) continue;
         const deduped: [number, number][] = [];
         for (let pi = 0; pi < corridor.length; pi++) {
           const p = corridor[pi];
           if (!p) continue;
-          if (deduped.length === 0 || deduped[deduped.length - 1][0] !== p[0] || deduped[deduped.length - 1][1] !== p[1]) {
+          if (deduped.length === 0 || deduped[deduped.length - 1]![0] !== p[0] || deduped[deduped.length - 1]![1] !== p[1]) {
             deduped.push(p);
           }
         }

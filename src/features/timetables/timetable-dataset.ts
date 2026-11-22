@@ -44,7 +44,7 @@ export interface TimetableDataset {
 // Re-exported synthetic datasets (loaded from version-controlled files)
 // ---------------------------------------------------------------------------
 
-import { loadGapeka2025, loadGapeka2026 } from '@/lib/railway-data';
+import { GAPEKA_2025, GAPEKA_2026 } from '@/lib/railway-data';
 
 /** All available schedule versions. */
 export const AVAILABLE_SCHEDULES: ScheduleSource[] = [
@@ -70,10 +70,8 @@ async function loadDatasets(): Promise<Map<ScheduleVersion, TimetableDataset>> {
   if (datasets) return datasets;
   datasets = new Map<ScheduleVersion, TimetableDataset>();
 
-  const [g2025, g2026] = await Promise.all([loadGapeka2025(), loadGapeka2026()]);
-
-  const metadata = (d: ReturnType<typeof loadGapeka2025>) => ({
-    version: d.version,
+  const metadata = (d: typeof GAPEKA_2025) => ({
+    version: d.version as ScheduleVersion,
     authority: d.authority,
     sourceType: d.scheduleSource,
     isSynthetic: d.isSyntheticEstimate,
@@ -83,13 +81,13 @@ async function loadDatasets(): Promise<Map<ScheduleVersion, TimetableDataset>> {
 
   datasets.set('2025', {
     id: '2025',
-    metadata: metadata(g2025),
-    trips: g2025.trips,
+    metadata: metadata(GAPEKA_2025),
+    trips: GAPEKA_2025.trips,
   });
   datasets.set('2026', {
     id: '2026',
-    metadata: metadata(g2026),
-    trips: g2026.trips,
+    metadata: metadata(GAPEKA_2026),
+    trips: GAPEKA_2026.trips,
   });
 
   return datasets;

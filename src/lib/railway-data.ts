@@ -5,13 +5,46 @@ import gapeka2026Data from '@/data/railway/gapeka-2026.json';
 import type { RailwayStation, RailwayLine, TimetableTrip, TimetableMetadata } from '../types/railway';
 
 /** Railway station dataset (version-controlled source of truth). */
-export const STATIONS: RailwayStation[] = stationsData;
+const RAW_STATIONS: unknown[] = stationsData;
+export const STATIONS: RailwayStation[] = RAW_STATIONS as RailwayStation[];
 /** Railway lines dataset. */
-export const LINES: RailwayLine[] = linesData;
+const RAW_LINES: unknown[] = linesData;
+export const LINES: RailwayLine[] = RAW_LINES as RailwayLine[];
 /** GAPEKA 2025 timetable (synthetic estimate). */
-export const GAPEKA_2025: TimetableMetadata = gapeka2025Data;
+export const GAPEKA_2025: TimetableMetadata = addEstimatedFlag(gapeka2025Data as unknown) as TimetableMetadata;
 /** GAPEKA 2026 timetable (synthetic estimate). */
-export const GAPEKA_2026: TimetableMetadata = gapeka2026Data;
+export const GAPEKA_2026: TimetableMetadata = addEstimatedFlag(gapeka2026Data as unknown) as TimetableMetadata;
+
+/** Add isEstimatedSchedule flag to timetable trips (required by type but not in source JSON). */
+function addEstimatedFlag(data: unknown): TimetableMetadata {
+  if (typeof data !== 'object' || data === null) {
+    throw new Error('Invalid timetable data');
+  }
+  const d = data as Record<string, unknown>;
+  const trips = d.trips as unknown[];
+  return {
+    version: String(d.version),
+    authority: String(d.authority),
+    scheduleSource: String(d.scheduleSource),
+    isSyntheticEstimate: Boolean(d.isSyntheticEstimate),
+    disclaimer: String(d.disclaimer),
+    trips: trips.map((t) => ({
+      ka: String((t as Record<string, unknown>).ka),
+      lineId: String((t as Record<string, unknown>).lineId),
+      category: String((t as Record<string, unknown>).category),
+      relation: String((t as Record<string, unknown>).relation),
+      routeTitle: String((t as Record<string, unknown>).routeTitle),
+      destination: String((t as Record<string, unknown>).destination),
+      stops: (t as Record<string, unknown>).stops != null ? ((t as Record<string, unknown>).stops as unknown[]).map((s: unknown) => ({
+        stationId: String((s as Record<string, unknown>).stationId),
+        time: Number((s as Record<string, unknown>).time),
+      })) : [],
+      isEstimatedSchedule: false,
+      trainName: undefined,
+    })),
+  };
+}
+
 
 /** Index lookup for stations. */
 export const STATION_INDEX = (() => {
