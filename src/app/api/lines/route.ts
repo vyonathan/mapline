@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from 'next/server';
 import { LINES, LINE_INDEX, getLineById } from '@/lib/railway-data';
 import type { RailwayLine } from '@/types/railway';
 
+// GET /api/lines
+export const dynamic = 'force-dynamic';
 
 export async function GET(request: NextRequest) {
   try {

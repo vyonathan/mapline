@@ -1,15 +1,17 @@
-import type { Metadata } from 'next';
-import MaplineMap from '@/components/map/mapline-map';
+'use client';
+
 import { useState } from 'react';
+import nextDynamic from 'next/dynamic';
 import { MapPin, Route, Train, Map as MapIcon, Layers } from 'lucide-react';
 
-export const metadata: Metadata = {
-  title: 'Map — Mapline',
-  description: 'Interactive railway map of Indonesia. Explore the network, stations, and train simulation.',
-  icons: {
-    icon: '/favicon.svg',
-  },
-};
+// Load the map component only on the client to avoid SSR issues with Leaflet
+const MapComponent = nextDynamic(() => import('@/components/map/mapline-map'), {
+  ssr: false,
+  loading: () => <div className="w-full h-full flex items-center justify-center text-slate-500">Loading map...</div>,
+});
+
+// The map page must be dynamic to avoid SSR errors with browser APIs
+export const dynamic = 'force-dynamic';
 
 export default function MapPage() {
   // Railway simulation train positions (would normally come from the server)
@@ -28,7 +30,7 @@ export default function MapPage() {
     <div className="flex-1 flex flex-col overflow-hidden">
       {/* Map container */}
       <div className="flex-1 relative">
-        <MaplineMap
+        <MapComponent
           initialCenter={[-6.215, 106.825]}
           initialZoom={12}
           activeStationIds={trackedStations}

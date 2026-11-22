@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from 'next/server';
 import { STATIONS } from '@/lib/railway-data';
 
 // GET /api/stations/ids
+export const dynamic = 'force-dynamic';
+
 export async function GET(request: NextRequest) {
   try {
     const q = request.nextUrl.searchParams.get('q');

@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from 'next/server';
 import { findAlternativeRoutes } from '@/features/routing/route-planner';
 
 // GET /api/journeys/alternatives
+export const dynamic = 'force-dynamic';
+
 export async function GET(request: NextRequest) {
   try {
     const originId = request.nextUrl.searchParams.get('origin');

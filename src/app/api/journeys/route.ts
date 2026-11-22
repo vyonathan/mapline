@@ -4,6 +4,8 @@ import { findBestRoute } from '@/features/routing/route-planner';
 import type { Route } from '@/types/railway';
 
 // GET /api/journeys/plan
+export const dynamic = 'force-dynamic';
+
 export async function GET(request: NextRequest) {
   try {
     const originId = request.nextUrl.searchParams.get('origin');
