@@ -1,4 +1,4 @@
-use client
+'use client'
 import { useEffect, useState } from 'react';
 import { Play, Pause, SkipBack, SkipForward, RotateCcw, MapPin, Clock, Zap } from 'lucide-react';
 import {
