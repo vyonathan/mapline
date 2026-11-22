@@ -1,0 +1,1665 @@
+[
+  {
+    "id": "JAKK",
+    "name": "Jakarta Kota",
+    "coords": [
+      106.8146,
+      -6.1376
+    ],
+    "region": "Jabodetabek",
+    "interchange": true,
+    "lines": [
+      "BOGOR",
+      "TANJUNGPRIOK"
+    ]
+  },
+  {
+    "id": "JAY",
+    "name": "Jayakarta",
+    "coords": [
+      106.8232,
+      -6.1413
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "BOGOR"
+    ]
+  },
+  {
+    "id": "MGB",
+    "name": "Mangga Besar",
+    "coords": [
+      106.827,
+      -6.1499
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "BOGOR"
+    ]
+  },
+  {
+    "id": "SW",
+    "name": "Sawah Besar",
+    "coords": [
+      106.8278,
+      -6.1606
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "BOGOR"
+    ]
+  },
+  {
+    "id": "JUA",
+    "name": "Juanda",
+    "coords": [
+      106.8306,
+      -6.1669
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "BOGOR"
+    ]
+  },
+  {
+    "id": "GDD",
+    "name": "Gondangdia",
+    "coords": [
+      106.8326,
+      -6.1859
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "BOGOR"
+    ]
+  },
+  {
+    "id": "CKI",
+    "name": "Cikini",
+    "coords": [
+      106.8414,
+      -6.1984
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "BOGOR"
+    ]
+  },
+  {
+    "id": "PJL",
+    "name": "Pegangsaan",
+    "coords": [
+      106.8465,
+      -6.2044
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "BOGOR"
+    ]
+  },
+  {
+    "id": "MRI",
+    "name": "Manggarai",
+    "coords": [
+      106.8502,
+      -6.2099
+    ],
+    "region": "Jabodetabek",
+    "interchange": true,
+    "lines": [
+      "BOGOR",
+      "CIKARANG",
+      "BASOETTA"
+    ]
+  },
+  {
+    "id": "TEB",
+    "name": "Tebet",
+    "coords": [
+      106.8582,
+      -6.2261
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "BOGOR"
+    ]
+  },
+  {
+    "id": "CW",
+    "name": "Cawang",
+    "coords": [
+      106.8587,
+      -6.2426
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "BOGOR"
+    ]
+  },
+  {
+    "id": "DRN",
+    "name": "Duren Kalibata",
+    "coords": [
+      106.8551,
+      -6.2553
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "BOGOR"
+    ]
+  },
+  {
+    "id": "PSMB",
+    "name": "Pasar Minggu Baru",
+    "coords": [
+      106.8518,
+      -6.2628
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "BOGOR"
+    ]
+  },
+  {
+    "id": "PSMG",
+    "name": "Pasar Minggu",
+    "coords": [
+      106.8446,
+      -6.2842
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "BOGOR"
+    ]
+  },
+  {
+    "id": "TNT",
+    "name": "Tanjung Barat",
+    "coords": [
+      106.8388,
+      -6.3079
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "BOGOR"
+    ]
+  },
+  {
+    "id": "UP",
+    "name": "Universitas Pancasila",
+    "coords": [
+      106.8344,
+      -6.3389
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "BOGOR"
+    ]
+  },
+  {
+    "id": "LN",
+    "name": "Lenteng Agung",
+    "coords": [
+      106.835,
+      -6.3304
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "BOGOR"
+    ]
+  },
+  {
+    "id": "POC",
+    "name": "Pondok Cina",
+    "coords": [
+      106.8322,
+      -6.369
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "BOGOR"
+    ]
+  },
+  {
+    "id": "UI",
+    "name": "Universitas Indonesia",
+    "coords": [
+      106.8318,
+      -6.3606
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "BOGOR"
+    ]
+  },
+  {
+    "id": "PDJ",
+    "name": "Pondok Ranji",
+    "coords": [
+      106.7441,
+      -6.2768
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "RANGKASBITUNG"
+    ]
+  },
+  {
+    "id": "DPB",
+    "name": "Depok Baru",
+    "coords": [
+      106.8216,
+      -6.391
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "BOGOR"
+    ]
+  },
+  {
+    "id": "DP",
+    "name": "Depok",
+    "coords": [
+      106.8173,
+      -6.405
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "BOGOR"
+    ]
+  },
+  {
+    "id": "CTA",
+    "name": "Citayam",
+    "coords": [
+      106.8024,
+      -6.4488
+    ],
+    "region": "Jabodetabek",
+    "interchange": true,
+    "lines": [
+      "BOGOR"
+    ]
+  },
+  {
+    "id": "BJD",
+    "name": "Bojonggede",
+    "coords": [
+      106.7949,
+      -6.4932
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "BOGOR"
+    ]
+  },
+  {
+    "id": "CLT",
+    "name": "Cilebut",
+    "coords": [
+      106.8006,
+      -6.5303
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "BOGOR"
+    ]
+  },
+  {
+    "id": "BOO",
+    "name": "Bogor",
+    "coords": [
+      106.7904,
+      -6.5956
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "BOGOR"
+    ]
+  },
+  {
+    "id": "CBN",
+    "name": "Cibinong",
+    "coords": [
+      106.8548,
+      -6.4646
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "BOGOR"
+    ]
+  },
+  {
+    "id": "NMO",
+    "name": "Nambo",
+    "coords": [
+      106.911,
+      -6.4622
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "BOGOR"
+    ]
+  },
+  {
+    "id": "CKR",
+    "name": "Cikarang",
+    "coords": [
+      107.1453,
+      -6.2554
+    ],
+    "region": "Jabodetabek",
+    "interchange": true,
+    "lines": [
+      "CIKARANG",
+      "PARAHYANGAN",
+      "KA_BARANG_JABODETABEK"
+    ]
+  },
+  {
+    "id": "TLM",
+    "name": "Metland Telagamurni",
+    "coords": [
+      107.1131,
+      -6.2559
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "CIKARANG"
+    ]
+  },
+  {
+    "id": "CIT",
+    "name": "Cibitung",
+    "coords": [
+      107.0846,
+      -6.2618
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "CIKARANG"
+    ]
+  },
+  {
+    "id": "TB",
+    "name": "Tambun",
+    "coords": [
+      107.0566,
+      -6.2615
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "CIKARANG"
+    ]
+  },
+  {
+    "id": "BKST",
+    "name": "Bekasi Timur",
+    "coords": [
+      107.0185,
+      -6.2458
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "CIKARANG"
+    ]
+  },
+  {
+    "id": "BKS",
+    "name": "Bekasi",
+    "coords": [
+      106.9996,
+      -6.2361
+    ],
+    "region": "Jabodetabek",
+    "interchange": true,
+    "lines": [
+      "CIKARANG",
+      "PARAHYANGAN",
+      "KA_BARANG_JABODETABEK"
+    ]
+  },
+  {
+    "id": "KRI",
+    "name": "Kranji",
+    "coords": [
+      106.9794,
+      -6.2244
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "CIKARANG"
+    ]
+  },
+  {
+    "id": "CUK",
+    "name": "Cakung",
+    "coords": [
+      106.9522,
+      -6.2194
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "CIKARANG"
+    ]
+  },
+  {
+    "id": "KLDB",
+    "name": "Klender Baru",
+    "coords": [
+      106.9403,
+      -6.2176
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "CIKARANG"
+    ]
+  },
+  {
+    "id": "BUA",
+    "name": "Buaran",
+    "coords": [
+      106.9234,
+      -6.2156
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "CIKARANG"
+    ]
+  },
+  {
+    "id": "KLD",
+    "name": "Klender",
+    "coords": [
+      106.8995,
+      -6.2133
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "CIKARANG"
+    ]
+  },
+  {
+    "id": "JNG",
+    "name": "Jatinegara",
+    "coords": [
+      106.8703,
+      -6.2152
+    ],
+    "region": "Jabodetabek",
+    "interchange": true,
+    "lines": [
+      "CIKARANG",
+      "PARAHYANGAN",
+      "KA_BARANG_JABODETABEK"
+    ]
+  },
+  {
+    "id": "MTR",
+    "name": "Matraman",
+    "coords": [
+      106.8603,
+      -6.2121
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "CIKARANG"
+    ]
+  },
+  {
+    "id": "SUD",
+    "name": "Sudirman",
+    "coords": [
+      106.8235,
+      -6.2024
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "CIKARANG"
+    ]
+  },
+  {
+    "id": "SUDB",
+    "name": "Sudirman Baru",
+    "coords": [
+      106.819,
+      -6.2007
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "CIKARANG"
+    ]
+  },
+  {
+    "id": "BNI",
+    "name": "BNI City",
+    "coords": [
+      106.819,
+      -6.2007
+    ],
+    "region": "Jabodetabek",
+    "interchange": true,
+    "lines": [
+      "BASOETTA",
+      "CIKARANG"
+    ]
+  },
+  {
+    "id": "KAT",
+    "name": "Karet",
+    "coords": [
+      106.8159,
+      -6.2008
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "CIKARANG"
+    ]
+  },
+  {
+    "id": "THB",
+    "name": "Tanah Abang",
+    "coords": [
+      106.8108,
+      -6.1857
+    ],
+    "region": "Jabodetabek",
+    "interchange": true,
+    "lines": [
+      "CIKARANG",
+      "RANGKASBITUNG"
+    ]
+  },
+  {
+    "id": "DU",
+    "name": "Duri",
+    "coords": [
+      106.8012,
+      -6.1553
+    ],
+    "region": "Jabodetabek",
+    "interchange": true,
+    "lines": [
+      "CIKARANG",
+      "TANGERANG",
+      "BASOETTA"
+    ]
+  },
+  {
+    "id": "AK",
+    "name": "Angke",
+    "coords": [
+      106.8007,
+      -6.1445
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "CIKARANG"
+    ]
+  },
+  {
+    "id": "KPB",
+    "name": "Kampung Bandan",
+    "coords": [
+      106.8286,
+      -6.1325
+    ],
+    "region": "Jabodetabek",
+    "interchange": true,
+    "lines": [
+      "CIKARANG",
+      "TANJUNGPRIOK",
+      "KA_BARANG_JABODETABEK"
+    ]
+  },
+  {
+    "id": "RJW",
+    "name": "Rajawali",
+    "coords": [
+      106.8369,
+      -6.145
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "CIKARANG",
+      "KA_BARANG_JABODETABEK"
+    ]
+  },
+  {
+    "id": "KMT",
+    "name": "Kemayoran",
+    "coords": [
+      106.8415,
+      -6.1619
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "CIKARANG"
+    ]
+  },
+  {
+    "id": "GST",
+    "name": "Gang Sentiong",
+    "coords": [
+      106.8442,
+      -6.1695
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "CIKARANG"
+    ]
+  },
+  {
+    "id": "PSE",
+    "name": "Pasar Senen",
+    "coords": [
+      106.8445,
+      -6.1742
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "CIKARANG",
+      "KA_BARANG_JABODETABEK"
+    ]
+  },
+  {
+    "id": "POK",
+    "name": "Pondok Jati",
+    "coords": [
+      106.8617,
+      -6.2007
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "CIKARANG"
+    ]
+  },
+  {
+    "id": "AC",
+    "name": "Ancol",
+    "coords": [
+      106.8449,
+      -6.1277
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "TANJUNGPRIOK",
+      "KA_BARANG_JABODETABEK"
+    ]
+  },
+  {
+    "id": "TPK",
+    "name": "Tanjung Priok",
+    "coords": [
+      106.8814,
+      -6.1106
+    ],
+    "region": "Jabodetabek",
+    "interchange": true,
+    "lines": [
+      "TANJUNGPRIOK",
+      "KA_BARANG_JABODETABEK"
+    ]
+  },
+  {
+    "id": "GRG",
+    "name": "Grogol",
+    "coords": [
+      106.7889,
+      -6.1617
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "TANGERANG"
+    ]
+  },
+  {
+    "id": "PSG",
+    "name": "Pesing",
+    "coords": [
+      106.7717,
+      -6.1616
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "TANGERANG"
+    ]
+  },
+  {
+    "id": "TKO",
+    "name": "Taman Kota",
+    "coords": [
+      106.7559,
+      -6.1618
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "TANGERANG"
+    ]
+  },
+  {
+    "id": "BOI",
+    "name": "Bojong Indah",
+    "coords": [
+      106.7362,
+      -6.1604
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "TANGERANG"
+    ]
+  },
+  {
+    "id": "RW_TNG",
+    "name": "Rawa Buaya",
+    "coords": [
+      106.7235,
+      -6.1628
+    ],
+    "region": "Jabodetabek",
+    "interchange": true,
+    "lines": [
+      "TANGERANG",
+      "BASOETTA"
+    ]
+  },
+  {
+    "id": "KDS",
+    "name": "Kalideres",
+    "coords": [
+      106.7032,
+      -6.1657
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "TANGERANG"
+    ]
+  },
+  {
+    "id": "PI",
+    "name": "Poris",
+    "coords": [
+      106.6821,
+      -6.1714
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "TANGERANG"
+    ]
+  },
+  {
+    "id": "BPR",
+    "name": "Batuceper",
+    "coords": [
+      106.6656,
+      -6.1731
+    ],
+    "region": "Jabodetabek",
+    "interchange": true,
+    "lines": [
+      "TANGERANG",
+      "BASOETTA"
+    ]
+  },
+  {
+    "id": "THI",
+    "name": "Tanah Tinggi",
+    "coords": [
+      106.647,
+      -6.1753
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "TANGERANG"
+    ]
+  },
+  {
+    "id": "TNG",
+    "name": "Tangerang",
+    "coords": [
+      106.6327,
+      -6.1765
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "TANGERANG"
+    ]
+  },
+  {
+    "id": "BST",
+    "name": "Bandara Soekarno-Hatta",
+    "coords": [
+      106.6524,
+      -6.1264
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "BASOETTA"
+    ]
+  },
+  {
+    "id": "PLM",
+    "name": "Palmerah",
+    "coords": [
+      106.7975,
+      -6.2073
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "RANGKASBITUNG"
+    ]
+  },
+  {
+    "id": "KBY",
+    "name": "Kebayoran",
+    "coords": [
+      106.7825,
+      -6.2372
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "RANGKASBITUNG"
+    ]
+  },
+  {
+    "id": "JMG",
+    "name": "Jurangmangu",
+    "coords": [
+      106.7294,
+      -6.2889
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "RANGKASBITUNG"
+    ]
+  },
+  {
+    "id": "SDU",
+    "name": "Sudimara",
+    "coords": [
+      106.7126,
+      -6.2969
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "RANGKASBITUNG"
+    ]
+  },
+  {
+    "id": "RW",
+    "name": "Rawa Buntu",
+    "coords": [
+      106.6763,
+      -6.315
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "RANGKASBITUNG"
+    ]
+  },
+  {
+    "id": "SRP",
+    "name": "Serpong",
+    "coords": [
+      106.6657,
+      -6.3203
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "RANGKASBITUNG"
+    ]
+  },
+  {
+    "id": "CSK",
+    "name": "Cisauk",
+    "coords": [
+      106.641,
+      -6.3247
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "RANGKASBITUNG"
+    ]
+  },
+  {
+    "id": "CC",
+    "name": "Cicayur",
+    "coords": [
+      106.6152,
+      -6.3268
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "RANGKASBITUNG"
+    ]
+  },
+  {
+    "id": "PRP",
+    "name": "Parung Panjang",
+    "coords": [
+      106.5698,
+      -6.3446
+    ],
+    "region": "Jabodetabek",
+    "interchange": true,
+    "lines": [
+      "RANGKASBITUNG"
+    ]
+  },
+  {
+    "id": "CJT",
+    "name": "Cilejit",
+    "coords": [
+      106.5089,
+      -6.3549
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "RANGKASBITUNG"
+    ]
+  },
+  {
+    "id": "DR",
+    "name": "Daru",
+    "coords": [
+      106.4783,
+      -6.3526
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "RANGKASBITUNG"
+    ]
+  },
+  {
+    "id": "TGS",
+    "name": "Tigaraksa",
+    "coords": [
+      106.4412,
+      -6.3408
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "RANGKASBITUNG"
+    ]
+  },
+  {
+    "id": "TEJ",
+    "name": "Tenjo",
+    "coords": [
+      106.4255,
+      -6.3324
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "RANGKASBITUNG"
+    ]
+  },
+  {
+    "id": "CJR",
+    "name": "Citeras",
+    "coords": [
+      106.3268,
+      -6.3442
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "RANGKASBITUNG"
+    ]
+  },
+  {
+    "id": "CTR",
+    "name": "Citeras Baru",
+    "coords": [
+      106.2981,
+      -6.3511
+    ],
+    "region": "Jabodetabek",
+    "interchange": false,
+    "lines": [
+      "RANGKASBITUNG"
+    ]
+  },
+  {
+    "id": "RK",
+    "name": "Rangkasbitung",
+    "coords": [
+      106.2515,
+      -6.3522
+    ],
+    "region": "Jabodetabek",
+    "interchange": true,
+    "lines": [
+      "RANGKASBITUNG"
+    ]
+  },
+  {
+    "id": "YK",
+    "name": "Yogyakarta",
+    "coords": [
+      110.3635,
+      -7.7892
+    ],
+    "region": "DAOP 6 Yogyakarta",
+    "interchange": true,
+    "lines": [
+      "YOGYASOLO",
+      "ARGO_WILIS"
+    ]
+  },
+  {
+    "id": "LPN",
+    "name": "Lempuyangan",
+    "coords": [
+      110.3754,
+      -7.7902
+    ],
+    "region": "DAOP 6 Yogyakarta",
+    "interchange": false,
+    "lines": [
+      "YOGYASOLO"
+    ]
+  },
+  {
+    "id": "MGW",
+    "name": "Maguwo",
+    "coords": [
+      110.4357,
+      -7.7848
+    ],
+    "region": "DAOP 6 Yogyakarta",
+    "interchange": false,
+    "lines": [
+      "YOGYASOLO"
+    ]
+  },
+  {
+    "id": "BBN",
+    "name": "Brambanan",
+    "coords": [
+      110.4893,
+      -7.7565
+    ],
+    "region": "DAOP 6 Yogyakarta",
+    "interchange": false,
+    "lines": [
+      "YOGYASOLO"
+    ]
+  },
+  {
+    "id": "SWT",
+    "name": "Srowot",
+    "coords": [
+      110.5568,
+      -7.7351
+    ],
+    "region": "DAOP 6 Yogyakarta",
+    "interchange": false,
+    "lines": [
+      "YOGYASOLO"
+    ]
+  },
+  {
+    "id": "KT",
+    "name": "Klaten",
+    "coords": [
+      110.6022,
+      -7.7126
+    ],
+    "region": "DAOP 6 Yogyakarta",
+    "interchange": false,
+    "lines": [
+      "YOGYASOLO"
+    ]
+  },
+  {
+    "id": "CE",
+    "name": "Ceper",
+    "coords": [
+      110.6713,
+      -7.6691
+    ],
+    "region": "DAOP 6 Yogyakarta",
+    "interchange": false,
+    "lines": [
+      "YOGYASOLO"
+    ]
+  },
+  {
+    "id": "DL",
+    "name": "Delanggu",
+    "coords": [
+      110.7031,
+      -7.6248
+    ],
+    "region": "DAOP 6 Yogyakarta",
+    "interchange": false,
+    "lines": [
+      "YOGYASOLO"
+    ]
+  },
+  {
+    "id": "GW",
+    "name": "Gawok",
+    "coords": [
+      110.7453,
+      -7.5844
+    ],
+    "region": "DAOP 6 Yogyakarta",
+    "interchange": false,
+    "lines": [
+      "YOGYASOLO"
+    ]
+  },
+  {
+    "id": "PWS",
+    "name": "Purwosari",
+    "coords": [
+      110.7909,
+      -7.5588
+    ],
+    "region": "DAOP 6 Yogyakarta",
+    "interchange": false,
+    "lines": [
+      "YOGYASOLO"
+    ]
+  },
+  {
+    "id": "SLO",
+    "name": "Solo Balapan",
+    "coords": [
+      110.8143,
+      -7.5567
+    ],
+    "region": "DAOP 6 Yogyakarta",
+    "interchange": true,
+    "lines": [
+      "YOGYASOLO",
+      "ARGO_WILIS"
+    ]
+  },
+  {
+    "id": "PL",
+    "name": "Palur",
+    "coords": [
+      110.8705,
+      -7.5625
+    ],
+    "region": "DAOP 6 Yogyakarta",
+    "interchange": false,
+    "lines": [
+      "YOGYASOLO"
+    ]
+  },
+  {
+    "id": "GMR",
+    "name": "Gambir",
+    "coords": [
+      106.8306,
+      -6.1767
+    ],
+    "region": "Jabodetabek",
+    "interchange": true,
+    "lines": [
+      "ARGO_BROMO",
+      "PARAHYANGAN"
+    ]
+  },
+  {
+    "id": "PWK",
+    "name": "Purwakarta",
+    "coords": [
+      107.4465,
+      -6.5532
+    ],
+    "region": "DAOP 2 Bandung",
+    "interchange": false,
+    "lines": [
+      "PARAHYANGAN"
+    ]
+  },
+  {
+    "id": "CMI",
+    "name": "Cimahi",
+    "coords": [
+      107.5356,
+      -6.8856
+    ],
+    "region": "DAOP 2 Bandung",
+    "interchange": false,
+    "lines": [
+      "PARAHYANGAN"
+    ]
+  },
+  {
+    "id": "BD",
+    "name": "Bandung",
+    "coords": [
+      107.6025,
+      -6.9126
+    ],
+    "region": "DAOP 2 Bandung",
+    "interchange": true,
+    "lines": [
+      "PARAHYANGAN",
+      "ARGO_WILIS"
+    ]
+  },
+  {
+    "id": "KAC",
+    "name": "Kiaracondong",
+    "coords": [
+      107.6464,
+      -6.9252
+    ],
+    "region": "DAOP 2 Bandung",
+    "interchange": false,
+    "lines": [
+      "ARGO_WILIS"
+    ]
+  },
+  {
+    "id": "TSM",
+    "name": "Tasikmalaya",
+    "coords": [
+      108.2241,
+      -7.3228
+    ],
+    "region": "DAOP 2 Bandung",
+    "interchange": false,
+    "lines": [
+      "ARGO_WILIS"
+    ]
+  },
+  {
+    "id": "BJR",
+    "name": "Banjar",
+    "coords": [
+      108.5419,
+      -7.3762
+    ],
+    "region": "DAOP 2 Bandung",
+    "interchange": false,
+    "lines": [
+      "ARGO_WILIS"
+    ]
+  },
+  {
+    "id": "CN",
+    "name": "Cirebon",
+    "coords": [
+      108.5553,
+      -6.7056
+    ],
+    "region": "DAOP 3 Cirebon",
+    "interchange": true,
+    "lines": [
+      "ARGO_BROMO",
+      "KA_BARANG_PANTURA"
+    ]
+  },
+  {
+    "id": "TG",
+    "name": "Tegal",
+    "coords": [
+      109.1426,
+      -6.8673
+    ],
+    "region": "DAOP 4 Semarang",
+    "interchange": false,
+    "lines": [
+      "ARGO_BROMO",
+      "KA_BARANG_PANTURA"
+    ]
+  },
+  {
+    "id": "PK",
+    "name": "Pekalongan",
+    "coords": [
+      109.6644,
+      -6.8899
+    ],
+    "region": "DAOP 4 Semarang",
+    "interchange": false,
+    "lines": [
+      "ARGO_BROMO",
+      "KA_BARANG_PANTURA"
+    ]
+  },
+  {
+    "id": "SMT",
+    "name": "Semarang Tawang",
+    "coords": [
+      110.4278,
+      -6.9647
+    ],
+    "region": "DAOP 4 Semarang",
+    "interchange": true,
+    "lines": [
+      "ARGO_BROMO",
+      "KA_BARANG_PANTURA"
+    ]
+  },
+  {
+    "id": "CU",
+    "name": "Cepu",
+    "coords": [
+      111.5912,
+      -7.1544
+    ],
+    "region": "DAOP 4 Semarang",
+    "interchange": false,
+    "lines": [
+      "ARGO_BROMO",
+      "KA_BARANG_PANTURA"
+    ]
+  },
+  {
+    "id": "KYA",
+    "name": "Kroya",
+    "coords": [
+      109.2535,
+      -7.6301
+    ],
+    "region": "DAOP 5 Purwokerto",
+    "interchange": true,
+    "lines": [
+      "ARGO_WILIS"
+    ]
+  },
+  {
+    "id": "KTA",
+    "name": "Kutoarjo",
+    "coords": [
+      109.9069,
+      -7.7259
+    ],
+    "region": "DAOP 5 Purwokerto",
+    "interchange": true,
+    "lines": [
+      "ARGO_WILIS"
+    ]
+  },
+  {
+    "id": "MN",
+    "name": "Madiun",
+    "coords": [
+      111.5245,
+      -7.619
+    ],
+    "region": "DAOP 7 Madiun",
+    "interchange": true,
+    "lines": [
+      "ARGO_WILIS"
+    ]
+  },
+  {
+    "id": "KTS",
+    "name": "Kertosono",
+    "coords": [
+      112.1023,
+      -7.592
+    ],
+    "region": "DAOP 7 Madiun",
+    "interchange": true,
+    "lines": [
+      "ARGO_WILIS",
+      "DAOP8_JATIM"
+    ]
+  },
+  {
+    "id": "JBG",
+    "name": "Jombang",
+    "coords": [
+      112.233,
+      -7.5582
+    ],
+    "region": "DAOP 7 Madiun",
+    "interchange": false,
+    "lines": [
+      "ARGO_WILIS",
+      "DAOP8_JATIM"
+    ]
+  },
+  {
+    "id": "BJ",
+    "name": "Bojonegoro",
+    "coords": [
+      111.8866,
+      -7.1642
+    ],
+    "region": "DAOP 8 Surabaya",
+    "interchange": false,
+    "lines": [
+      "ARGO_BROMO",
+      "KA_BARANG_PANTURA"
+    ]
+  },
+  {
+    "id": "LMG",
+    "name": "Lamongan",
+    "coords": [
+      112.4215,
+      -7.1125
+    ],
+    "region": "DAOP 8 Surabaya",
+    "interchange": false,
+    "lines": [
+      "ARGO_BROMO",
+      "KA_BARANG_PANTURA"
+    ]
+  },
+  {
+    "id": "SBI",
+    "name": "Surabaya Pasarturi",
+    "coords": [
+      112.731,
+      -7.2484
+    ],
+    "region": "DAOP 8 Surabaya",
+    "interchange": true,
+    "lines": [
+      "ARGO_BROMO",
+      "DAOP8_JATIM",
+      "KA_BARANG_PANTURA"
+    ]
+  },
+  {
+    "id": "SGU",
+    "name": "Surabaya Gubeng",
+    "coords": [
+      112.752,
+      -7.2655
+    ],
+    "region": "DAOP 8 Surabaya",
+    "interchange": true,
+    "lines": [
+      "ARGO_WILIS",
+      "DAOP8_JATIM"
+    ]
+  },
+  {
+    "id": "WO",
+    "name": "Wonokromo",
+    "coords": [
+      112.738,
+      -7.3029
+    ],
+    "region": "DAOP 8 Surabaya",
+    "interchange": true,
+    "lines": [
+      "DAOP8_JATIM"
+    ]
+  },
+  {
+    "id": "SPN",
+    "name": "Sepanjang",
+    "coords": [
+      112.6978,
+      -7.3474
+    ],
+    "region": "DAOP 8 Surabaya",
+    "interchange": false,
+    "lines": [
+      "DAOP8_JATIM"
+    ]
+  },
+  {
+    "id": "KRN",
+    "name": "Krian",
+    "coords": [
+      112.5833,
+      -7.4083
+    ],
+    "region": "DAOP 8 Surabaya",
+    "interchange": false,
+    "lines": [
+      "DAOP8_JATIM"
+    ]
+  },
+  {
+    "id": "MR",
+    "name": "Mojokerto",
+    "coords": [
+      112.4337,
+      -7.4721
+    ],
+    "region": "DAOP 8 Surabaya",
+    "interchange": true,
+    "lines": [
+      "ARGO_WILIS",
+      "DAOP8_JATIM"
+    ]
+  },
+  {
+    "id": "SDA",
+    "name": "Sidoarjo",
+    "coords": [
+      112.7128,
+      -7.4561
+    ],
+    "region": "DAOP 8 Surabaya",
+    "interchange": true,
+    "lines": [
+      "DAOP8_JATIM"
+    ]
+  },
+  {
+    "id": "BG",
+    "name": "Bangil",
+    "coords": [
+      112.7801,
+      -7.5982
+    ],
+    "region": "DAOP 8 Surabaya",
+    "interchange": true,
+    "lines": [
+      "DAOP8_JATIM"
+    ]
+  },
+  {
+    "id": "LW",
+    "name": "Lawang",
+    "coords": [
+      112.6951,
+      -7.8358
+    ],
+    "region": "DAOP 8 Surabaya",
+    "interchange": false,
+    "lines": [
+      "DAOP8_JATIM"
+    ]
+  },
+  {
+    "id": "ML",
+    "name": "Malang",
+    "coords": [
+      112.6371,
+      -7.9775
+    ],
+    "region": "DAOP 8 Surabaya",
+    "interchange": true,
+    "lines": [
+      "DAOP8_JATIM"
+    ]
+  },
+  {
+    "id": "BL",
+    "name": "Blitar",
+    "coords": [
+      112.1627,
+      -8.1011
+    ],
+    "region": "DAOP 8 Surabaya",
+    "interchange": true,
+    "lines": [
+      "DAOP8_JATIM"
+    ]
+  }
+]

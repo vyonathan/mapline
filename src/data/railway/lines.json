@@ -1,0 +1,362 @@
+[
+  {
+    "id": "BOGOR",
+    "name": "Bogor Line",
+    "shortName": "Bogor",
+    "category": "COMMUTER",
+    "color": "#ff3b30",
+    "region": "Jabodetabek",
+    "operator": "KAI Commuter",
+    "headway": "5\u201310 min",
+    "sequences": [
+      [
+        "JAKK",
+        "JAY",
+        "MGB",
+        "SW",
+        "JUA",
+        "GDD",
+        "CKI",
+        "PJL",
+        "MRI",
+        "TEB",
+        "CW",
+        "DRN",
+        "PSMB",
+        "PSMG",
+        "TNT",
+        "UP",
+        "LN",
+        "POC",
+        "UI",
+        "PDJ",
+        "DPB",
+        "DP",
+        "CTA",
+        "BJD",
+        "CLT",
+        "BOO"
+      ],
+      [
+        "CTA",
+        "CBN",
+        "NMO"
+      ]
+    ]
+  },
+  {
+    "id": "CIKARANG",
+    "name": "Cikarang Loop Line",
+    "shortName": "Cikarang",
+    "category": "COMMUTER",
+    "color": "#0a84ff",
+    "region": "Jabodetabek",
+    "operator": "KAI Commuter",
+    "headway": "8\u201312 min",
+    "sequences": [
+      [
+        "CKR",
+        "TLM",
+        "CIT",
+        "TB",
+        "BKST",
+        "BKS",
+        "KRI",
+        "CUK",
+        "KLDB",
+        "BUA",
+        "KLD",
+        "JNG",
+        "MTR",
+        "MRI",
+        "SUD",
+        "SUDB",
+        "KAT",
+        "THB",
+        "DU",
+        "AK",
+        "KPB",
+        "RJW",
+        "KMT",
+        "GST",
+        "PSE",
+        "POK",
+        "JNG"
+      ]
+    ]
+  },
+  {
+    "id": "RANGKASBITUNG",
+    "name": "Rangkasbitung Line",
+    "shortName": "Rangkasbitung",
+    "category": "COMMUTER",
+    "color": "#34c759",
+    "region": "Jabodetabek",
+    "operator": "KAI Commuter",
+    "headway": "10\u201315 min",
+    "sequences": [
+      [
+        "THB",
+        "PLM",
+        "KBY",
+        "PDJ",
+        "JMG",
+        "SDU",
+        "RW",
+        "SRP",
+        "CSK",
+        "CC",
+        "PRP",
+        "CJT",
+        "DR",
+        "TGS",
+        "TEJ",
+        "CJR",
+        "CTR",
+        "RK"
+      ]
+    ]
+  },
+  {
+    "id": "TANGERANG",
+    "name": "Tangerang Line",
+    "shortName": "Tangerang",
+    "category": "COMMUTER",
+    "color": "#af52de",
+    "region": "Jabodetabek",
+    "operator": "KAI Commuter",
+    "headway": "13\u201320 min",
+    "sequences": [
+      [
+        "DU",
+        "GRG",
+        "PSG",
+        "TKO",
+        "BOI",
+        "RW_TNG",
+        "KDS",
+        "PI",
+        "BPR",
+        "THI",
+        "TNG"
+      ]
+    ]
+  },
+  {
+    "id": "TANJUNGPRIOK",
+    "name": "Tanjung Priok Line",
+    "shortName": "Tanjung Priok",
+    "category": "COMMUTER",
+    "color": "#ff2d55",
+    "region": "Jabodetabek",
+    "operator": "KAI Commuter",
+    "headway": "30 min",
+    "sequences": [
+      [
+        "JAKK",
+        "KPB",
+        "AC",
+        "TPK"
+      ]
+    ]
+  },
+  {
+    "id": "BASOETTA",
+    "name": "Soekarno-Hatta Airport Line",
+    "shortName": "Basoetta",
+    "category": "COMMUTER",
+    "color": "#ff9500",
+    "region": "Jabodetabek",
+    "operator": "KAI Commuter",
+    "headway": "30 min",
+    "sequences": [
+      [
+        "MRI",
+        "BNI",
+        "DU",
+        "RW_TNG",
+        "BPR",
+        "BST"
+      ]
+    ]
+  },
+  {
+    "id": "KA_BARANG_JABODETABEK",
+    "name": "KA Barang Petikemas (TPK\u2013KPB\u2013CKR)",
+    "shortName": "KA Barang",
+    "category": "BARANG",
+    "color": "#8e8e93",
+    "region": "Jabodetabek",
+    "operator": "KAI Logistik",
+    "headway": "Scheduled Freight",
+    "sequences": [
+      [
+        "TPK",
+        "AC",
+        "KPB",
+        "RJW",
+        "KMT",
+        "PSE",
+        "JNG",
+        "BKS",
+        "CKR"
+      ]
+    ]
+  },
+  {
+    "id": "YOGYASOLO",
+    "name": "Yogyakarta\u2013Solo Line",
+    "shortName": "Yogya\u2013Solo",
+    "category": "COMMUTER",
+    "color": "#5ac8fa",
+    "region": "DAOP 6 Yogyakarta",
+    "operator": "KAI Commuter",
+    "headway": "45\u201360 min",
+    "sequences": [
+      [
+        "YK",
+        "LPN",
+        "MGW",
+        "BBN",
+        "SWT",
+        "KT",
+        "CE",
+        "DL",
+        "GW",
+        "PWS",
+        "SLO",
+        "PL"
+      ]
+    ]
+  },
+  {
+    "id": "DAOP8_JATIM",
+    "name": "DAOP 8 Surabaya Commuter & Local",
+    "shortName": "DAOP 8 Surabaya",
+    "category": "COMMUTER",
+    "color": "#ff9f0a",
+    "region": "DAOP 8 Surabaya",
+    "operator": "KAI Commuter Wilayah 8",
+    "headway": "30\u201360 min",
+    "sequences": [
+      [
+        "SBI",
+        "SGU",
+        "WO",
+        "SDA",
+        "BG",
+        "LW",
+        "ML"
+      ],
+      [
+        "SBI",
+        "SGU",
+        "WO",
+        "SPN",
+        "KRN",
+        "MR",
+        "JBG",
+        "KTS",
+        "BL",
+        "ML"
+      ]
+    ]
+  },
+  {
+    "id": "ARGO_BROMO",
+    "name": "Argo Bromo Anggrek (North Java)",
+    "shortName": "Argo Bromo Anggrek",
+    "category": "KAJJ",
+    "color": "#ffd60a",
+    "region": "Intercity Java (Pantura)",
+    "operator": "PT KAI (Persero)",
+    "headway": "2\u00d7 Daily",
+    "sequences": [
+      [
+        "GMR",
+        "CN",
+        "TG",
+        "PK",
+        "SMT",
+        "CU",
+        "BJ",
+        "LMG",
+        "SBI"
+      ]
+    ]
+  },
+  {
+    "id": "ARGO_WILIS",
+    "name": "Argo Wilis / Turangga (South Java)",
+    "shortName": "Argo Wilis",
+    "category": "KAJJ",
+    "color": "#64d2ff",
+    "region": "Intercity Java (Selatan)",
+    "operator": "PT KAI (Persero)",
+    "headway": "2\u00d7 Daily",
+    "sequences": [
+      [
+        "BD",
+        "KAC",
+        "TSM",
+        "BJR",
+        "KYA",
+        "KTA",
+        "YK",
+        "SLO",
+        "MN",
+        "KTS",
+        "JBG",
+        "MR",
+        "SGU"
+      ]
+    ]
+  },
+  {
+    "id": "PARAHYANGAN",
+    "name": "KA Parahyangan (Jakarta\u2013Bandung)",
+    "shortName": "KA Parahyangan",
+    "category": "KAJJ",
+    "color": "#bf5af2",
+    "region": "DAOP 1 \u2013 DAOP 2",
+    "operator": "PT KAI (Persero)",
+    "headway": "90\u2013120 min",
+    "sequences": [
+      [
+        "GMR",
+        "JNG",
+        "BKS",
+        "CKR",
+        "PWK",
+        "CMI",
+        "BD"
+      ]
+    ]
+  },
+  {
+    "id": "KA_BARANG_PANTURA",
+    "name": "KA Barang Petikemas Kalimas (TPK\u2013SBI)",
+    "shortName": "KA Barang Kalimas",
+    "category": "BARANG",
+    "color": "#8e8e93",
+    "region": "Intercity Freight (Pantura)",
+    "operator": "KAI Logistik",
+    "headway": "Scheduled Freight",
+    "sequences": [
+      [
+        "TPK",
+        "KPB",
+        "JNG",
+        "CKR",
+        "CN",
+        "TG",
+        "PK",
+        "SMT",
+        "CU",
+        "BJ",
+        "LMG",
+        "SBI"
+      ]
+    ]
+  }
+]
