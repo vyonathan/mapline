@@ -1,3 +1,4 @@
+use client
 import { useState, useEffect } from 'react';
 import { Search, Route, MapPin } from 'lucide-react';
 import LineCard from '@/components/lines/line-card';

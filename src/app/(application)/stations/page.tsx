@@ -1,3 +1,4 @@
+use client
 import { useState, useEffect } from 'react';
 import { Search, MapPin, Route, Clock } from 'lucide-react';
 import StationCard from '@/components/stations/station-card';
